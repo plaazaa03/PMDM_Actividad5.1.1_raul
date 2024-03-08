@@ -11,8 +11,7 @@ public class Subactividad extends AppCompatActivity {
 
     private Button btnAceptar;
     private Button btnRechazar;
-
-    private EditText
+    private EditText edit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +37,9 @@ public class Subactividad extends AppCompatActivity {
     }
 
     private void aceptarCondiciones() {
-        String nombre = edit
+        // Acciones a realizar cuando se aceptan las condiciones
+        Toast.makeText(this, "Condiones aceptadas", Toast.LENGTH_SHORT).show();
+        finish();
     }
 
     private void rechazarCondiciones() {
